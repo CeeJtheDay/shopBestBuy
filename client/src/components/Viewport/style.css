@@ -1,0 +1,24 @@
+#viewport {
+    background-color: lightsteelblue;
+    text-align: center;
+    border: solid 20px rgba(255, 221, 0, 0.438);
+    border-radius: 20px;
+    margin: 40px auto 40px auto;
+    padding: 25px;
+    color: white;
+}
+
+.product {
+    padding: 10px 40px 10px 40px;
+    border: outset 1px rgba(255, 255, 255, 0.589);
+    background-color: rgba(19, 8, 8, 0.281);
+    margin: 3px 30px 3px 30px;
+}
+
+#cartBtn {
+    color: rgba(18, 9, 68, 0.774);
+    font-family: 'Alfa Slab One', cursive;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: outset 1px rgba(255, 255, 255, 0.589);
+}
