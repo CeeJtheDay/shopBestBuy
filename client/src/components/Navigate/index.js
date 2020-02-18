@@ -25,20 +25,20 @@ function Navigate({ setCartModalShow, cartModalShow }) {
   // }
 
   function handleSearchChange(e) {
-    e.preventDefault();
     let thisQuery = document.getElementById("searchValue");
+    e.preventDefault();
     setQuery(thisQuery.value);
     console.log(query);
   };
 
   return (
       <Container>
-        <Navbar bg="primary" variant="dark" expand="lg" id="nav" cartmodalshow={cartModalShow} setcartmodalshow={setCartModalShow}>
+        <Navbar bg="primary" variant="dark" expand="lg" id="nav" data-cartmodalshow={cartModalShow} data-setcartmodalshow={setCartModalShow}>
           <Navbar.Brand href="#home">
             <i>Shop</i> Best Buy<FontAwesomeIcon icon={faTag} size="2x" color="#FFDF00" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav" setcartmodalshow={setCartModalShow}>
+          <Navbar.Collapse id="basic-navbar-nav" data-setcartmodalshow={setCartModalShow}>
             <Nav className="mr-auto">
               <Nav.Link href="#" data-toggle="modal" data-target="#modalCart" onClick={() => setCartModalShow ? (setCartModalShow(true)) : (null)}>View Cart</Nav.Link>
             </Nav>

@@ -29,11 +29,13 @@ const products = [
 ]
 
 const Viewport = () => {
+    // const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        let test = "nintendo switch"
+        let test = "nintendo"
         API.getProducts(test)
       .then(res => {
+        console.log("Products Array:");
         console.log(res.data);
       })
       .catch(err => console.log(err));
