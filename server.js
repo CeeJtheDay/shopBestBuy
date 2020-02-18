@@ -18,6 +18,10 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
+
+// app.use(require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true }));
+
+
 // Error handling
 app.use(function(err, req, res, next) {
   if (err.name === "UnauthorizedError") {
